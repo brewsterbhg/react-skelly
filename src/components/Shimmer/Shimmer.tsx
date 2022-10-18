@@ -6,13 +6,13 @@ interface ShimmerProps {
   useImage?: boolean
 }
 
-export function Shimmer({ useImage }: ShimmerProps) {
+export function Shimmer({ useImage = false }: ShimmerProps) {
   return (
     <div css={styles.shimmerStyle}>
       {useImage !== false ? (
         <img src={invisibleSquare} alt='' css={styles.animationStyle} />
       ) : (
-        <span css={styles.animationStyle} />
+        <span css={styles.animationStyle} data-testid='react-skelly-shimmer' />
       )}
     </div>
   )
