@@ -1,0 +1,17 @@
+{
+  "jsc": {
+    "experimental": {
+      "plugins": [["emotion-swc-plugin"]]
+    },
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "dynamicImport": true
+    },
+    "target": "es2021"
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "sourceMaps": true
+}
